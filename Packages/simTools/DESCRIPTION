@@ -1,0 +1,14 @@
+Package: simTools
+Title: Simulation Analysis Tools
+Version: 1.0-0
+Authors@R: c( person("Aimee", "Gott", email = "agott@mango-solutions.com", role = c("aut", "cre")),
+  person("Andy", "Nicholls", email = "anicholls@mango-solutions.com", role = "ctb") )
+Description: A series of tools for simulation analysis used for learning about
+  distributions.
+Depends: R (>= 3.1.2)
+Imports: ggplot2 (>= 1.0.0)
+License: GPL-2
+LazyData: true
+Suggests: testthat,
+    knitr
+VignetteBuilder: knitr

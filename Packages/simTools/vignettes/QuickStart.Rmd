@@ -1,0 +1,33 @@
+---
+title: "Quick Start Guide"
+author: "Aimee Gott"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Quick Start Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This guide is intended as a means of quickly getting started with the package **simTools**. It will introduce the main workflow of the package. 
+
+## Getting Started
+
+The main function in the **simTools** package is `sampleFromData`. This function will allow you to generate random samples from a given data set. It is useful for simulation experiments. 
+
+### Loading the package
+
+Before starting you will need to load the package in the usual way using either `library` or `require`. 
+
+```{r echo = FALSE}
+library(simTools)
+```
+
+### Running the main function
+
+Once the package is loaded we can run the function as follows:
+
+```{r}
+example1 <- sampleFromData(airquality, size = 5)
+example1
+```

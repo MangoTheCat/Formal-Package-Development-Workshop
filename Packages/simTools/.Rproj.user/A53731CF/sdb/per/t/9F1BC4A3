@@ -1,0 +1,18 @@
+{
+    "contents" : "#' Simple example of including data\n#'\n#' This is a simple example of how we can include data in a package\n#' and provide the corresponding documentation.\n#'\n#' @format A data.frame with 10 rows and two columns:\n#' \\describe{\n#'  \\item{ID}{Unique identity variable}\n#'  \\item{Value}{Simulated value (g)}\n#'  }\n#'\n#'  @source Simulated data\n\"exampleData\"\n",
+    "created" : 1441897250070.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "2834057165",
+    "id" : "9F1BC4A3",
+    "lastKnownWriteTime" : 1441897312,
+    "path" : "C:/Users/agott/Desktop/simulationTools/R/exampleData.R",
+    "project_path" : "R/exampleData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

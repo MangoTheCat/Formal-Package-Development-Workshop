@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: simTools\nTitle: Simulation Analysis Tools\nVersion: 1.0-0\nAuthors@R: c( person(\"Aimee\", \"Gott\", email = \"agott@mango-solutions.com\", role = c(\"aut\", \"cre\")),\n  person(\"Andy\", \"Nicholls\", email = \"anicholls@mango-solutions.com\", role = \"ctb\") )\nDescription: A series of tools for simulation analysis used for learning about\n  distributions.\nDepends: R (>= 3.1.2)\nImports: ggplot2 (>= 1.0.0)\nLicense: GPL-2\nLazyData: true\nSuggests: testthat,\n    knitr\nVignetteBuilder: knitr\n",
+    "created" : 1441895076654.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "3440580607",
+    "id" : "B5D0AD2F",
+    "lastKnownWriteTime" : 1441897063,
+    "path" : "C:/Users/agott/Desktop/simulationTools/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "#' Sample from a dataset\n#'\n#' This function has been designed to sample from the rows of a two\n#' dimensional data set returning all columns of the sampled rows.\n#'\n#' @param data The matrix or data.frame from which rows are to be\n#' sampled.\n#' @param size The number of samples to take.\n#' @param replace Should values be replaced? By default takes the\n#' value TRUE.\n#' @param ... Any other parameters to be passed to the sample\n#' function\n#'\n#' @return Returns a dataset of the same type as the input data with \\code{size} rows.\n#'\n#' @author Aimee Gott <agott@@mango-solutions.com>\n#'\n#' @export\n#' @examples\n#' sampleFromData(airquality, 100)\n#'\nsampleFromData <- function(data, size, replace = TRUE, ...){\n\n  if(!is.numeric(size))\n    stop(\"Size must be a numeric integer value\")\n\n  lengthData <- nrow(data)\n\n  if(!replace & size > lengthData){\n    stop(\"Cannot sample greater than the data size without\n         replacement\")\n  }\n\n  samples <- sample(seq_len(lengthData), size = size,\n                    replace = replace, ...)\n\n  invisible(data[samples, ])\n\n  }\n",
+    "created" : 1441895014122.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "3143304186",
+    "id" : "1B1D3279",
+    "lastKnownWriteTime" : 1441895072,
+    "path" : "C:/Users/agott/Desktop/simulationTools/R/sampleFromData.R",
+    "project_path" : "R/sampleFromData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
