@@ -1,0 +1,49 @@
+---
+title: "Getting Started"
+author: "Aimee Gott"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+*This is a simple example of including a package vignette. Using RMarkdown allows us to generate HTML package documentation. RMarkdown is a simple to use mark-up language.* 
+
+## Loading the package
+
+After installing we can load the package in the usual manner for a package as can be seen in the example:
+
+```{r}
+library(summaryTools)
+```
+
+## Main Function
+
+The main package function is `numericSummary`. We provide a numeric vector and it will return a named vector containing:
+
+* Min
+* Mean
+* Variance
+* Max
+* NAs
+
+Take a look at the following example:
+
+```{r}
+exampleData <- c(5, 9, 11, 13, NA, 2, 4, 8, 3)
+stats <- numericSummary(exampleData)
+stats
+```
+
+## Uses
+
+We can use these summary statistics to generate simple graphics to visualise the information.
+
+```{r, fig.show='hold'}
+plot(exampleData)
+abline(h = stats["Mean"], col = "grey", lty = 2)
+```
+
+
