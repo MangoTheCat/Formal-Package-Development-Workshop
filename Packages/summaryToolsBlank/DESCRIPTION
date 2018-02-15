@@ -1,0 +1,10 @@
+Package: summaryTools
+Title: Simple tools for custom numeric summaries
+Version: 1.0.0
+Authors@R: person("Aimee", "Gott", email = "agott@mango-solutions.com", role = c("aut", "cre"))
+Description: A simple package that includes a function for generating numeric summaries. Please note that this package was created for demonstrating package development only.
+Depends: R (>= 3.1.2)
+License: GPL-2
+LazyData: true
+Suggests: knitr
+VignetteBuilder: knitr
